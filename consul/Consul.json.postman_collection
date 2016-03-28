@@ -1,0 +1,74 @@
+{
+	"id": "95295ea3-6513-ba33-0fb8-444a981fea1b",
+	"name": "Consul",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "b6b53fcb-1d7e-31b1-c82b-d225a0f7edf2",
+			"name": "catalog",
+			"description": "query nodes and services",
+			"order": [
+				"3b522cc1-1140-f5d0-841e-3c843d11f3f4"
+			],
+			"owner": 0
+		},
+		{
+			"id": "e829f82c-eac6-495a-6143-30f8f552e2b4",
+			"name": "service",
+			"description": "query specific service information",
+			"order": [
+				"cfe4eaec-b299-d45f-6bf4-55459f59e5b3"
+			],
+			"owner": 0
+		}
+	],
+	"timestamp": 1448535836180,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "3b522cc1-1140-f5d0-841e-3c843d11f3f4",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyaWQiOiIxIiwidXNlcm5hbWUiOiJ0ZXN0IiwidGVuYW50aWQiOiIxIiwiaWF0IjoxNDQ3OTIxNjg4LCJleHAiOjE1MDc5MjE2ODh9.7cpo8tlQj3bgzp2hTy3FL0jdHxIKNzAevXQysd-NdrU\n",
+			"url": "http://consul1.ea.lab:8500/v1/catalog/services",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "95295ea3-6513-ba33-0fb8-444a981fea1b",
+			"data": [],
+			"dataMode": "params",
+			"name": "list-services",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1448536012059,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b6b53fcb-1d7e-31b1-c82b-d225a0f7edf2"
+		},
+		{
+			"id": "cfe4eaec-b299-d45f-6bf4-55459f59e5b3",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyaWQiOiIxIiwidXNlcm5hbWUiOiJ0ZXN0IiwidGVuYW50aWQiOiIxIiwiaWF0IjoxNDQ3OTIxNjg4LCJleHAiOjE1MDc5MjE2ODh9.7cpo8tlQj3bgzp2hTy3FL0jdHxIKNzAevXQysd-NdrU\n",
+			"url": "http://consul1.ea.lab:8500/v1/catalog/service/webapp001",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "95295ea3-6513-ba33-0fb8-444a981fea1b",
+			"data": [],
+			"dataMode": "params",
+			"name": "get-service-details",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1448536119194,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "e829f82c-eac6-495a-6143-30f8f552e2b4"
+		}
+	]
+}
